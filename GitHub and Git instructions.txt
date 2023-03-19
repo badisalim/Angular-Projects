@@ -1,0 +1,69 @@
+Badi Raslan 
+git Test
+-------------------------
+to make new repository 
+# create repo in gitHub
+# copy repo Link starts with ("git remote add origin https----")
+# make new folder in desktop and make readme.txt file in the foldor.
+# use the following commands in terminal: on the folder you created in desktop
+1 - git init 
+2 - git add .
+3 - git commit -m "your commit"
+4# - use the link you coppied from the repo in your terminal
+5 - git push -u origin master
+enter your user name and password./or use ssh for no use user name and Password
+done creating the repo
+------------------------------------
+
+in case you want to update anything in an existing repo:\
+use only those following commands :
+1 - git status.then git branch.(to know which branch we are)
+2 - git add .
+3 - git commit -m "your message"
+4 - git push
+enter username and password
+done updating repo
+------------------------------------
+* git pull origin master.(to transfer data to your branch)
+* mkdir Badi.(to create new folder)
+* dir .(show folders)
+* cd Badi (go inside folder)
+* cd .. (return one step or folder)
+* cd (return to main root)
+--------------------------------------
+ssh
+1- fork
+2- clone or download
+3- click clipboard(to copy the files )
+4- open terminal
+5- git clone + paste the link from clipboard(to get files in our system)
+6-locate the file and open in terminal
+
+follow these steps.....
+-----------
+ssh
+
+1- open folder in terminal
+2- git status
+3- make modification to the file
+4- git status
+*creat new branch
+5- git checkout -b name
+6- git add .
+7- git commit -m "name"
+8- git pull
+9- git checkout master
+10- git merge name
+11- git push -u origin master (only the first time you push)
+---------
+ssh
+resolve conflict with partner (only if both updated same line in the same class)
+1- get permition frome your partner
+
+
+
+
+
+
+
+-------------------------------------

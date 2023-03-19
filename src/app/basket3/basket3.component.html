@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Basket3</h1>
+  <div *ngFor="let branch of shop">
+    <h2>{{branch.branch}}</h2>
+    <div *ngFor="let basket of branch.baskets">
+      <h4>Basket3 {{basket.name}}</h4>
+      <ul>
+        <li *ngFor="let product of basket.products">{{product.product}}: Amount={{product.amount}},
+          Price={{product.price}}</li>
+      </ul>
+      <p>Sum of Basket3: {{ calculateBasketTotal(basket)}}</p>
+    </div>
+    <p>Sum of Branch: {{ calculateBranchTotal(branch).toFixed(2)}}</p>
+
+  </div>
+  <p>Sum of total Shop:{{ calculateShopTotal(shop)}}</p>
+</div>

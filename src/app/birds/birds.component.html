@@ -1,0 +1,18 @@
+<h1>Birds</h1>
+<div>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Employee Name</th>
+      <th>Date of Joining</th>
+      <th>Age</th>
+    </tr>
+    <tr *ngFor="let bird of birds">
+      <td>{{bird.ID}}</td>
+      <td>{{bird.Name}}</td>
+
+      <td>{{bird.Type}}</td>
+      <td>{{bird.Age}}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+#chessboard {
+  width: 670px;
+  height: 670px;
+  margin: 10px auto;
+  border: 15px solid rgb(185, 22, 22);
+}
+h1{
+  margin-left: 450px;
+}
+div.black {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(155, 28, 28, 0.651);
+}
+
+div.white {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+div.black:hover,
+div.white:hover {
+  background-color: green;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "508893736634",
+    "firebase_url": "https://angularprojects-fc5ce.firebaseio.com",
+    "project_id": "angularprojects-fc5ce",
+    "storage_bucket": "angularprojects-fc5ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508893736634:android:a8d24ffc24f6da30",
+        "android_client_info": {
+          "package_name": "badisalim.r1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508893736634-9g21vebi4jgndeo0cprjg0etsboplepu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYyOq4tfBSSW9slrvr7OdEBq-Zgcx9LcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508893736634-9g21vebi4jgndeo0cprjg0etsboplepu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

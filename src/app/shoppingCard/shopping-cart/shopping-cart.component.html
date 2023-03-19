@@ -1,0 +1,41 @@
+<div class="container py-3">
+  <h4 class="text-center text-uppercase">How to calculate Shopping Card in Angular </h4>
+  <table class="table table-bordered">
+    <thead class="bg-danger text-white text-upparcase">
+      <tr>
+        <th>Product----</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data; let id=index">
+        <td>
+          <input type="text" [(ngModel)]="item.name" class="form-control" z>
+        </td>
+        <td>
+          <input type="number" min="1" [(ngModel)]="item.quantity" class="form-control">
+        </td>
+        <td>
+          <input type="number" min="1" [(ngModel)]="item.price" class="form-control">
+        </td>
+        <td>{{item.quantity * item.price | currency:'$'}}</td>
+        <td>
+          <button (click)="removeItem(id)" class="btn btn-sm btn-danger"><img width="20px"
+              src="https://raw.githubusercontent.com/badisalim/shopping-card/master/src/assets/icons/trash.png" /></button>
+        </td>
+        <td><button type="button" (click)="editItem()" class="btn btn-sm btn-primary rounded-0">
+         Edit...</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" (click)="addItem()" class="btn btn-sm btn-primary rounded-0">
+          Add Product ...</button></td>
+        <td></td>
+        <td>Total:</td>
+        <td>{{total() | currency:'$'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,21 @@
+h1,
+p {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(198, 220, 223)
+}
+
+p {
+  font-size: 1.5em;
+}
+
+ul {
+  padding: 2px;
+  text-align: center;
+  background-color: hsla(180, 31%, 87%, 0.301);
+
+}
+.container{
+
+  margin-left: 50px;
+}

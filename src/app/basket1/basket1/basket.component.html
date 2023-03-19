@@ -1,0 +1,60 @@
+<h1>Basket1</h1>
+
+<div *ngFor="let branch of shop">
+  <h2>{{branch.branch}}</h2>
+  <div *ngFor="let basket of branch.baskets">
+    <h4>Basket {{basket.name}}</h4>
+    <ul>
+      <li *ngFor="let product of basket.products">{{product.product}}: Amount={{product.amount}},
+        Price={{product.price}},Total={{((product.amount*product.price).toFixed(2))}}</li>
+    </ul>
+    <p>Sum of Basket: {{ calculateBasketTotal(basket).toFixed(2)}}</p>
+  </div>
+
+  <p>Sum of Branch: {{ calculateBranchTotal(branch).toFixed(2)}}</p>
+  <div></div>
+</div>
+<p>Total Shop: {{ calculateShopTotal(shop)}}</p>
+<p>--------------------------------------</p>
+
+
+
+<h2>Purchases per Product / Branch</h2>
+<ng-container *ngFor="let product of products">
+  <h3>{{ product.name }}</h3>
+  <ng-container *ngFor="let branch of product.branches">
+    <h4>{{ branch.name }}</h4>
+    <table class="table">
+      <thead>
+
+        <a routerLink="/add-product" class="btn btn-primary">Add Product</a>
+
+        <tr>
+
+          <th>Basket</th>
+          <th>Product</th>
+          <th>Code</th>
+          <th>Amount</th>
+          <th>Price</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let basketItem of branch.basketItems">
+          <td>{{ basketItem.branchName }}</td>
+          <td>{{ basketItem.product }}</td>
+          <td>{{ basketItem.code }}</td>
+          <td>{{ basketItem.amount }}</td>
+          <td>{{ basketItem.price }}</td>
+          <td><a class="btn btn-primary" [routerLink]="['/shop', 'edit-product', product]">Edit</a></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td colspan="3">Total Branch</td>
+        <td>{{ calculateBranchTotal2(branch) | currency: '€ ':'symbol':'1.2-2' }}</td>
+      </tfoot>
+    </table>
+  </ng-container>
+<h4>Product Total: {{ calculateProductTotal(product) | currency: '€ ':'symbol':'1.2-2' }}</h4>
+</ng-container>
+

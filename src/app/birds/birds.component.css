@@ -1,0 +1,26 @@
+h1{margin-left: 50px;}
+table 
+{
+    width: auto;
+    font: 17px Calibri;
+}
+table, th, td 
+{
+  background-color: rgb(154, 221, 221);
+     border-collapse: collapse;
+     text-align: center;
+}
+
+table, th, td 
+{
+    margin-left:  50px ;
+    margin-bottom: 20px;
+    border: solid 1px #333;
+    padding: 10px 10px;
+    font: 15px Verdana;
+}
+th {
+    color: red;
+    background-color: rgb(227, 236, 103);
+    font-weight:bold;
+}

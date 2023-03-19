@@ -1,0 +1,45 @@
+<!-- <link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous"
+/> -->
+<!-- <link rel="stylesheet" href="task-manager.component.scss" /> -->
+
+<div class="row form">
+  <div class="col-12 col-md-9 col-lg-6">
+    <h2>Add a new Task</h2>
+
+
+    <form [formGroup]="formGroup" (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="">Name of the Task</label>
+        <input type="text" name="name" formControlName="name" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="">Percentage finished</label>
+        <input name="Percentage" formControlName="progress" type="number" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="">Description</label>
+
+        <textarea name="description" class="form-control" formControlName="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="">Type</label>
+        <select name="type" class="form-control" formControlName="type">
+          <option value="private">Private</option>
+          <option value="professional">Professional</option>
+          <option value="event">Event</option>
+        </select>
+      </div>
+      <!-- <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="" formControlName="finished" />
+    <label for="">Finished</label>
+  </div> -->
+
+     
+      <div><input type="submit" class="btn btn-primary" value="OK" /></div> <div class="invalid">
+        <ng-container *ngIf="!isValid">Form is not valid.</ng-container>
+      </div>
+    </form>

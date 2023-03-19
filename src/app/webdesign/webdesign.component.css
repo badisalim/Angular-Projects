@@ -1,0 +1,279 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inner-container {
+  flex: 0 1 1024px;
+}
+
+.backtext {
+  background-color: rgb(140, 185, 240);
+
+}
+
+.backtext .border-text {
+  border-radius: 50px;
+  border-color: brown
+}
+
+h1 {
+  background: rgb(10, 82, 131);
+  padding: 0.5em 1em;
+  margin: 0;
+
+  color: rgba(213, 225, 235, 0.973);
+}
+
+h2 {
+  font-size: 120%;
+  background: rgb(159, 180, 38);
+  padding: 0.5em 1em;
+  margin: 0;
+  color: rgba(213, 225, 235, 0.973);
+
+  /*animation*/
+
+
+  width: 200px;
+  height: 50px;
+  background-color: rgb(0, 100, 150);
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+}
+
+
+/* Standard syntax */
+#div h2 {
+  animation-timing-function: linear;
+}
+
+
+
+
+/* Standard syntax */
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 700px;
+  }
+}
+
+
+
+h3 {
+  font-size: 120%;
+  background: rgb(180, 71, 38);
+  padding: 0.5em 1em;
+  margin: 0;
+  color: rgba(213, 225, 235, 0.973);
+
+
+  width: 200px;
+  height: 50px;
+  background-color: rgb(0, 100, 150);
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+}
+
+
+/* Standard syntax */
+h3 {
+  animation-timing-function: linear;
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 700px;
+  }
+
+}
+
+p1 {
+  background: rgb(38, 124, 180);
+  padding: 0.5em 1em;
+  margin: 0;
+  color: rgba(213, 225, 235, 0.973);
+
+}
+
+.body-wrap {
+  background: rgb(247, 198, 189);
+  border-top: 1px solid rgb(8, 59, 8);
+  display: flex;
+}
+
+.side-images {
+
+  padding: 40px;
+  display: flex;
+  justify-content: flex-start;
+  background: rgb(217, 227, 233);
+  flex-direction: column;
+  flex: 1 0 250px;
+  border-radius: 100%;
+
+}
+
+img {
+  width: 100%;
+  border-radius: 100%;
+  margin-bottom: 125px;
+}
+
+.bottom-images2 img {
+  border-radius: 0px;
+}
+
+.menu {
+  padding: 0.5em;
+  background-color: rgba(255, 238, 0, 0.959);
+  text-align: center;
+  color: black;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li.active {
+  font-weight: bold;
+}
+
+.body {
+  padding: 1em;
+}
+
+.promotion-text {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.promotion-container {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+   
+}
+
+.form input{
+margin-left: 20px;
+
+}
+.form select {
+  font-size: 15px;
+  padding: 0.5em 0;
+
+}
+
+.promotion-images {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+side-images2 img {
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 0%;
+}
+
+
+
+
+#calc-contain {
+  position: relative;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 0px auto;
+  padding: 20px 20px 100px 20px;
+}
+
+#agh {
+  position: relative;
+  float: right;
+  margin-top: 15px;
+}
+
+#agh p {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+input[type=button] {
+  background: lightGray;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 7px;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+input[type=button]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input[type=button]:hover {
+  background-color: #003300;
+  color: white;
+}
+
+input[type=text] {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 4px 0px 12px black inset;
+}
+
+#color {
+  color: rgb(189, 44, 80);
+  background: lightgray;
+
+}

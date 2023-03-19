@@ -1,0 +1,23 @@
+.container{
+
+  margin-left:50px;
+}
+
+
+ul {
+  padding: 10px;
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  background: #eee;
+}
+
+li:hover {
+  color: #607d8b;
+  background-color: #ddd;
+}
+li span.badge {
+  background-color: red;
+}

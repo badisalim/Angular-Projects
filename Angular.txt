@@ -1,0 +1,63 @@
+
+* ng new angular-projects (creat new Angular projects)
+* cd angular-projects
+* ng g c name (creat new component project)
+* ng g s name (creat service)
+* code .(to open angular-projects)
+* ng serve -o(to run the program ----port 4200)
+* ng serve --port 4201 -o (to run in other browser)
+* node server/server.js (to read json file)
+* ctr+c (to stope program)
+--------------------------------------------
+* https://my-json-server.typicode.com/badisalim/AngularProjects/mall.
+-- node server/server.js(to open localhost:3000/dbshop)
+-- make db.json file push to github then go to my-json-server then add your github adress with filename
+* my-json-server.typicode.com/baisalim/angular projects/shop
+
+* github Collaborators then add collaborator(name account).....this to allow freind to access my github
+
+ng g s name      (create module file)
+ng g s name      (creat service file)
+
+node server/server.js  (to run server localhost)
+
+
+to store and load images in github.
+
+github/AngularProjects/assets/image/download
+then copy http adress
+put it in your html adress
+----------------------------------------
+git status
+git add .
+git commit -m "update"
+git push(to push files to github)
+-------------------------------
+git pull origin master (to pull files from github)
+--------------------------------------
+git branch (to know which branch we are)
+git checkout badiRaslan (to transfer to your branch)
+
+-----------------------------------
+* in case of problem with commit
+1.git init
+2.git config user.name "badisalim"
+3.git config user.email "badisalim@gmail.com"
+4.git add *
+5.git commit -m "some init msg"
+
+-----------------------------------
+sudo npm install
+sudo npm install --save jest
+sudo npm install --save lodash
+------------------------------
+Ctrl+z=undo
+Ctrl+Shift+z=redo
+Ctrl+k+c=to comment
+Ctrl+k+u=to uncomment
+Ctrl+A=sellect all
+Alt+Arrow up and down (to move the codeline)
+Ctrl+Shift+N=open new project instead of write code
+Alt+Shift+i=to open console in browser
+Ctrl+Shift+L=to sellect all similar words for modification
+
